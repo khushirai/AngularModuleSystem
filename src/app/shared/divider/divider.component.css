@@ -1,0 +1,5 @@
+/* it will not apply to first divider, only on subsequent one */
+:host:not(:first-of-type){
+    display:block;
+    margin-top: 20px;
+}
