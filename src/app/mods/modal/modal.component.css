@@ -1,0 +1,15 @@
+/* looks for no child elements, no custom content*/
+.actions:empty {
+    display:none;
+}
+
+/* by default hide this thing */
+.actions-default{
+    display:none;
+}
+
+/* + denotes a sibling element */
+/* empty and has a sibling element of default */
+.actions:empty + .actions-default {
+    display:block;
+}

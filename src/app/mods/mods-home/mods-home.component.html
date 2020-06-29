@@ -1,0 +1,18 @@
+<app-divider>Modal Component</app-divider>
+<button (click)="onClick()">Show Modal</button>
+<!-- it will display only if modal open value is true -->
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+    <div modalTitle>
+        I am REUSABLE title
+    </div>
+  <p>
+    Some content for the modal window should go right here!
+  </p>
+  <ng-container modalFooter>
+    <button (click)="onClick()" class="ui button">CLOSE ME!</button>
+  </ng-container>
+  </app-modal
+>
+
+<app-divider>Accordion Component</app-divider>
+<app-accordion [items]="items"></app-accordion>
